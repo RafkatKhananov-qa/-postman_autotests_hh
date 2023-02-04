@@ -13,7 +13,7 @@ pm.test("Сравнение поля id", function () {
     pm.expect(jsonData.id).to.eql('5008932');
 });
 
-pm.test("Response time is less than 200ms", function () {
+pm.test("Response time is less than 150ms", function () {
     pm.expect(pm.response.responseTime).to.be.below(150);
 });
     
